@@ -1,0 +1,157 @@
+// Form
+
+@mixin form-field-wrapper($mb: 20px) {
+    position: relative;
+    margin-bottom: $mb;
+}
+
+@mixin form-label($c: $col-blue-1) {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: $c;
+}
+
+@mixin form-input($w: auto, $py: 8px, $px: 10px, $bw: 1px, $mb: 0, $fz: 16px) {
+    width: $w;
+    height: auto;
+    padding: $py $px;
+    border: $bw solid $col-blue-1;
+    border-radius: 4px;
+    margin-bottom: $mb;
+    box-sizing: border-box;
+    font-size: $fz;
+    background-color: $col-white;
+    box-shadow: none;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &:focus {
+        border-color: $col-orange-1;
+    }
+
+    &::placeholder {
+        color: $col-blue-1;
+        opacity: 0.5;
+    }
+
+    &[type=number] {
+        -moz-appearance: textfield;
+    }
+}
+
+@mixin form-dropdown($w: auto, $mxh: 300px, $bw: 1px, $t: 3px) {
+    width: $w;
+    max-height: 300px;
+    border: $bw solid $col-blue-1;
+    border-radius: 4px;
+    position: absolute;
+    top: calc(100% + #{$t});
+    left: 0;
+    z-index: 1;
+    background-color: $col-white;
+    overflow-y: auto;
+}
+
+@mixin form-dropdown-item() {
+    padding: 5px 10px;
+    cursor: pointer;
+
+    &--selected,
+    &:hover {
+        background-color: $col-orange-1-transparent;
+    }
+}
+
+// ==============================================
+// Old
+// ==============================================
+
+// Grid
+@mixin root-container {
+    max-width: 1370px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet) {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@mixin root-container-fluid {
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+@mixin flex-row($cg: 0, $rg: 0) {
+    display: flex;
+    column-gap: $cg;
+    row-gap: $rg;
+}
+
+@mixin flex-col-equal($n: 2, $cg: 30px) {
+    flex: 1 1 calc((100% / #{$n}) - #{$cg});
+}
+
+@mixin flex-col($fb, $cg: 30px) {
+    flex: 1 1 calc(#{$fb} - #{$cg});
+}
+
+@mixin grid-tab() {
+    box-shadow: $shadow-grid-tab;
+}
+
+// Modules
+
+@mixin home-slide-container {
+    min-height: calc(100vh - #{$headerWidth});
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    @media (min-width: $tablet) {
+        padding-top: 40px;
+    }
+}
+
+@mixin home-h2 {
+    margin: 0 auto 20px;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 55px;
+    }
+}
+
+// @mixin form-checkbox {
+
+// }
+
+@mixin required-field-sign {
+    color: $colRed;
+}
+
+@mixin form-error-message($t: 5px) {
+    position: absolute;
+    top: calc(100% + #{$t});
+    font-size: 12px;
+    line-height: 12px;
+    color: $colRed;
+}
+
+@mixin no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}

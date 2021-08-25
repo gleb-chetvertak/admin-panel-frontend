@@ -1,0 +1,101 @@
+a {
+    &,
+    &:hover,
+    &:active,
+    &:visited {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+body {
+    @include no-scrollbar;
+}
+
+// Fonts
+
+html,
+body {
+    font-family: $ffSec;
+    font-size: $base-font-size;
+    font-weight: $base-font-weight;
+
+    @media (min-width: $largePhone) {
+        font-size: $base-font-size-large-phone;
+    }
+
+    @media (min-width: $tablet) {
+        font-size: $base-font-size-tablet;
+    }
+
+    @media (min-width: $largeTablet) {
+        font-size: $base-font-size-large-tablet;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: $base-font-size-desktop;
+    }
+}
+
+h1 {
+    margin: 0 0 10px;
+    text-align: center;
+    font-family: $ffMain;
+    font-size: $fzH1;
+    line-height: $lhH1;
+    font-weight: 300;
+    color: $col-blue-1;
+}
+
+h2 {
+    font-family: $ffMain;
+    font-size: $fzH2;
+    line-height: $lhH2;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: $ffMain;
+    font-size: $fzH3;
+    line-height: $lhH3;
+    font-weight: 700;
+}
+
+h4 {
+    font-family: $ffSec;
+    font-size: $fzH4;
+    line-height: $lhH4;
+    font-weight: 500;
+}
+
+h5 {
+    font-family: $ffSec;
+    font-size: $fzH5;
+    line-height: $lhH5;
+    font-weight: 500;
+}
+
+h6 {
+    font-family: $ffSec;
+    font-size: $fzH6;
+    line-height: $lhH6;
+    font-weight: 500;
+}
+
+p {
+    font-family: $ffSec;
+    font-size: $fzPar;
+    line-height: $lhPar;
+    font-weight: 400;
+}
+
+// Transitions
+.fade-enter-active,
+.fade-leave-active {
+    transition: $animHomeSlidesAndRouter;
+}
+
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}

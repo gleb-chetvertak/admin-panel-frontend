@@ -1,0 +1,114 @@
+// Colors
+$col-white: #fff;
+
+$col-blue-1: #35495e;
+
+$col-blue-1-transparent: rgba(53, 73, 94, 0.3);
+
+$col-orange-1: #ff3e17;
+
+$col-orange-1-transparent: rgba(255, 62, 23, 0.8);
+
+$col-gray-1: #bdc0c2;
+$col-gray-2: #f2f2f2;
+
+$col-green-1: #43a047;
+$col-green-2: #215023;
+
+// Shadows
+$shadow-1: 4px 0 8px 0 rgba(0, 0, 0, 0.3);
+$shadow-2: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.04), 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+$shadow-3: -4px 0 8px 0 rgba(0, 0, 0, 0.3);
+
+// Animations
+$anim-1: transform 0.3s ease-out;
+
+// ==============================================
+// Old
+// ==============================================
+
+// Colors
+$colBlue: #35495e;
+$colRed: #ff3e17;
+$colWhite: #fff;
+$colBlack: #000;
+$colGrayDark: #bdc0c2;
+$colGray: #f2f2f2;
+$col-border-grid-tab: rgba(50, 50, 50, 0.1);
+
+$colGrayTr: rgba(255, 255, 255, 0.3);
+
+// $gridTabBorder: rgba(50, 50, 50, 0.15);
+
+$headerGradient: linear-gradient(rgb(0, 0, 0) -6.85%, rgba(0, 0, 0, 0) 100%);
+// $boxShadow: 0 0 15px 0 rgba(50,50,50,.15);
+
+$gradientHomeControlTop: linear-gradient(to bottom, rgba(53, 73, 94, 0.8), rgba(53, 73, 94, 0.7), rgba(53, 73, 94, 0.5), rgba(53, 73, 94, 0.3), rgba(53, 73, 94, 0));
+$gradientHomeControlBottom: linear-gradient(to top, rgba(53, 73, 94, 0.8), rgba(53, 73, 94, 0.7), rgba(53, 73, 94, 0.5), rgba(53, 73, 94, 0.3), rgba(53, 73, 94, 0));
+// $gradientHomeControlTop: linear-gradient(to bottom, rgba(189, 192, 194, 0.8), rgba(189, 192, 194, 0.7), rgba(189, 192, 194, 0.5), rgba(189, 192, 194, 0.3), rgba(189, 192, 194, 0));
+// $gradientHomeControlBottom: linear-gradient(to top, rgba(189, 192, 194, 0.8), rgba(189, 192, 194, 0.7), rgba(189, 192, 194, 0.5), rgba(189, 192, 194, 0.3), rgba(189, 192, 194, 0));
+
+// Shadows
+$shadowCompareControls: -8px 0 10px #e5e5e5;
+$shadowCompareSpecs: 8px 0 10px #e5e5e5;
+$shadowHeader: 0 4px 30px 6px rgba(0, 0, 0, 0.07);
+$shadowHeaderLeft: -8px 0 10px #e5e5e5;
+$shadow-grid-tab: 0 0 1px 1px rgba(50, 50, 50, 0.1);
+$shadow-products-hover: 0 0 15px 1px rgba(50, 50, 50, 0.4);
+$shadow-compare-specs-hover: 0 2px 5px 0 rgba(50, 50, 50, 0.3), 0 -2px 5px 0 rgba(50, 50, 50, 0.3);
+
+// Animations
+$animHomeSlidesAndRouter: opacity 0.4s ease-in;
+$animButtons: border-color 0.2s ease-in, color 0.2s ease-in, background-color 0.2s ease-in;
+// $animLinks: color 0.2s ease-out;
+$animLinks: color 0.2s ease-out;
+$animFill: fill 0.2s ease-out;
+$animHomeControls: opacity 0.2s ease-out;
+$animHomeControlIcons: margin 0.2s ease-out 0.2s, opacity 0.2s ease-out;
+$animGridTabsProducts: box-shadow 0.2s ease-out;
+$animGridTabsSingleItem: background-color 0.2s ease-out;
+$animCompareControls: height 0.3s ease-out;
+$anim-header-catalog: transform 0.3s ease-out;
+$anim-header-mobile: transform 0.3s ease-out;
+$anim-specs: transform 0.3s ease-out;
+
+// Sizes
+$phone: 375px;
+$largePhone: 475px;
+$tablet: 768px;
+$largeTablet: 1024px;
+$desktop: 1200px;
+$largeDesktop: 1440px;
+
+$content: 1000px;
+
+$headerWidth: 50px;
+$headerHeight: 60px;
+
+// Fonts
+$ffMain: robotocondensed, arial, serif;
+$ffSec: roboto, arial, serif;
+
+$base-font-size: 8px;
+$base-font-size-large-phone: 10px;
+$base-font-size-tablet: 12px;
+$base-font-size-large-tablet: 14px;
+$base-font-size-desktop: 16px;
+$base-font-weight: 400;
+
+$fzH1: 2rem;
+$fzH2: 2rem;
+$fzH3: 1.2rem;
+$fzH4: 1rem;
+$fzH5: 1rem;
+$fzH6: 0.9rem;
+$fzPar: 0.9rem;
+$fzNavLink: 14px;
+
+$lhH1: 2.5rem;
+$lhH2: 2.5rem;
+$lhH3: 1.5rem;
+$lhH4: 1.2rem;
+$lhH5: 1.2rem;
+$lhH6: 1rem;
+$lhPar: 1rem;
